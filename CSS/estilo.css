@@ -1,0 +1,309 @@
+:root{
+    --black: black;
+    --red: rgb(122, 6, 6);
+    --gray: rgb(48, 46, 46);
+    --white:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'PT Serif', serif; 
+    /*la fuente la cambio más tarde*/
+}
+
+/*menu*/
+#header{
+    position: relative;
+    width: 100%;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu .icono-cabeza{
+    margin-left: 20px;
+}
+
+.menu .icono-cabeza h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.menu .list-container{
+    margin-right: 20px;
+}
+
+.menu .list-container .lists{
+    display: flex;
+}
+
+.menu .list-container .lists li{
+    list-style: none;
+}
+
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--black);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu .list-container .lists li a.activo{
+    background: var(--red);
+    color: #fff;
+}
+
+.menu .list-container .lists li a:hover{
+    background: var(--red);
+    color: #fff;
+}
+
+.span-menu > .fa-bars{
+    display: none;
+}
+
+/*header imagenes*/
+
+.img-cabeza{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../Img/Texture.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-cabeza .crock{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.356);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-cabeza .crock h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.img-cabeza .crock hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+
+.img-cabeza .crock p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.img-cabeza .crock > button{
+    width: 170px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-cabeza .crock > button:hover{
+    background: var(--gray);
+}
+
+/*Historia*/
+
+.historia{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.historia .primeros-pasos{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.historia .primeros-pasos h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.historia .primeros-pasos p{
+    text-align: center;
+    font-size: 17px;
+    color: var(--black);
+    line-height: 35px;
+    margin: 10px 0px;
+}
+
+.historia .primeros-pasos .img-h{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.historia .primeros-pasos img, video{
+    width: cacl(33.33% - 10px);
+    height: 300px;
+    object-fit: cover;
+    margin: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.historia .primeros-pasos .mass{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.historia .primeros-pasos .mass button{
+    width: 120px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.historia .primeros-pasos .mass button:hover{
+    background: var(--gray);
+}
+
+/*youtube*/
+
+.kid-crock{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../Img/textura.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+.kid-crock .fondo-degradado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.kid-crock .ejeZproject{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.kid-crock .container-project{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.kid-crock .container-project .titulo{
+    border: 2px solid #fff;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.kid-crock .container-project .titulo h2{
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.kid-crock .container-project .titulo hr{
+    background: #fff;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.kid-crock .container-project .titulo .img-yt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+.kid-crock .container-project .titulo .img-yt img{
+    width: calc(30% - 10px);
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.kid-crock .container-project .titulo .img-sc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+.kid-crock .container-project .titulo .img-sc img{
+    width: calc(30% - 10px);
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
