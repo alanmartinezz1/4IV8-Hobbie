@@ -399,6 +399,8 @@ body{
     color: var(--red);
 }
 
+/*footer*/
+
 .footer{
     position: relative;
     width: 100%;
@@ -416,26 +418,26 @@ body{
     background: rgba(0, 0, 0, 0.8);
 }
 
-.footer .ejeZfooter{
+.footer .ejeZ-footer{
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.footer .footercontent{
+.footer .footer-content{
     width: 90%;
     padding-top: 100px;
     margin: auto;
 }
 
-.footer .footercontent .titulo-footer{
+.footer .footer-content .titulo-footer{
     width: 50%;
     margin: auto;
     border: 2px solid #fff;
     padding: 15px;
 }
 
-.footer .footercontent .titulo-footer h2{
+.footer .footer-content .titulo-footer h2{
     width: 50%;
     margin: 10px auto;
     color: #fff;
@@ -444,7 +446,7 @@ body{
     margin-bottom: 10px;
 }
 
-.footer .footercontent .titulo-footer hr{
+.footer .footer-content .titulo-footer hr{
     width: 80%;
     margin: 20px auto;
 }
