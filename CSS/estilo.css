@@ -478,3 +478,18 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
+
+@media (min-width: 600px){
+    .historia {
+        padding: 20px;
+        font-size: 1.5em;
+    }
+    .kid-crock{
+        padding: 20px;
+        font-size: 1.5em;
+    }
+    .metas{
+        padding: 20px;
+        font-size: 1.5em;
+    }
+}
