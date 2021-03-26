@@ -164,10 +164,10 @@ body{
 }
 
 .historia .primeros-pasos h1{
-    font-size: 50px;
+    text-align: center;
     font-weight: 400;
     color: var(--black);
-    text-align: center;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
@@ -176,7 +176,7 @@ body{
     font-size: 17px;
     color: var(--black);
     line-height: 35px;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
 .historia .primeros-pasos .img-h{
